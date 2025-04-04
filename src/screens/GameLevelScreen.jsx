@@ -3,15 +3,21 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Svg, { Line } from 'react-native-svg';
-import { BlurView } from '@react-native-community/blur';
+import { BlurView } from 'expo-blur';
 import { useDispatch, useSelector } from 'react-redux';
 import { nextLevel, starSelected, wrongStarSelected, resetLevel, resetAll } from '../store/slices/levelsSlice';
 
 export default function GameLevelScreen() {
     const navigation = useNavigation();
     const dispatch = useDispatch();
-
-    const { currentLevelIndex, levels, status, frontChain, backChain, multiProgress } = useSelector(state => state.levels);
+    const {
+        currentLevelIndex,
+        levels,
+        status,
+        frontChain,
+        backChain,
+        multiProgress
+    } = useSelector(state => state.levels);
     const currentLevelData = levels[currentLevelIndex];
     const stars = currentLevelData.stars;
     const correctSequence = currentLevelData.correctSequence;
@@ -28,18 +34,18 @@ export default function GameLevelScreen() {
     }, [status]);
 
     const allowedIndices = (() => {
-        const cs = currentLevelData.correctSequence;
         if (isMultiLine) return [];
+        const cs = correctSequence;
         if (frontChain.length === 0 && backChain.length === 0) {
             return [cs[0], cs[cs.length - 1]];
         }
         if (frontChain.length > 0 && backChain.length === 0) {
-            let frontPos = frontChain[frontChain.length - 1];
-            return frontPos < cs.length - 1 ? [cs[frontPos + 1]] : [];
+            let pos = frontChain[frontChain.length - 1];
+            return pos < cs.length - 1 ? [cs[pos + 1]] : [];
         }
         if (backChain.length > 0 && frontChain.length === 0) {
-            let backPos = backChain[backChain.length - 1];
-            return backPos > 0 ? [cs[backPos - 1]] : [];
+            let pos = backChain[backChain.length - 1];
+            return pos > 0 ? [cs[pos - 1]] : [];
         }
         if (frontChain.length > 0 && backChain.length > 0) {
             let frontPos = frontChain[frontChain.length - 1];
@@ -62,27 +68,30 @@ export default function GameLevelScreen() {
     };
 
     const lines = [];
-    if (isMultiLine && Array.isArray(currentLevelData.correctSequence[0]) && multiProgress) {
-        correctSequence.forEach((line, i) => {
-            const { front, back } = multiProgress[i];
-            const visitedIndices = [...front, ...back.filter(index => !front.includes(index))].sort((a, b) => a - b);
-            for (let j = 1; j < visitedIndices.length; j++) {
-                const start = stars[line[visitedIndices[j - 1]]];
-                const end = stars[line[visitedIndices[j]]];
-                lines.push({
-                    startX: start.left + 6,
-                    startY: start.top + 6,
-                    endX: end.left + 6,
-                    endY: end.top + 6,
-                    key: `line-${i}-${j}`
-                });
-            }
-        });
-    } else if (!isMultiLine) {
-        const effective = [...frontChain, ...[...backChain].reverse()];
-        for (let i = 1; i < effective.length; i++) {
-            const start = stars[effective[i - 1]];
-            const end = stars[effective[i]];
+    if (isMultiLine && Array.isArray(correctSequence[0])) {
+        if (multiProgress) {
+            correctSequence.forEach((line, i) => {
+                const { front, back } = multiProgress[i];
+                const visitedIndices = [...front, ...back.filter(index => !front.includes(index))].sort((a, b) => a - b);
+                for (let j = 1; j < visitedIndices.length; j++) {
+                    const start = stars[line[visitedIndices[j - 1]]];
+                    const end = stars[line[visitedIndices[j]]];
+                    lines.push({
+                        startX: start.left + 6,
+                        startY: start.top + 6,
+                        endX: end.left + 6,
+                        endY: end.top + 6,
+                        key: `line-${i}-${j}`
+                    });
+                }
+            });
+        }
+    } else {
+        const effectiveChain = [...frontChain, ...[...backChain].reverse()];
+        const mappedChain = effectiveChain.map(i => correctSequence[i]);
+        for (let i = 1; i < mappedChain.length; i++) {
+            const start = stars[mappedChain[i - 1]];
+            const end = stars[mappedChain[i]];
             lines.push({
                 startX: start.left + 6,
                 startY: start.top + 6,
@@ -139,9 +148,8 @@ export default function GameLevelScreen() {
                     />
                 </TouchableOpacity>
             </View>
-
             <View style={styles.spaceBlock}>
-                <Svg style={StyleSheet.absoluteFillObject}>
+                <Svg style={StyleSheet.absoluteFill}>
                     {lines.map(line => (
                         <Line
                             key={line.key}
@@ -157,28 +165,24 @@ export default function GameLevelScreen() {
                 {stars.map((star, index) => (
                     <TouchableOpacity
                         key={index}
-                        style={[styles.starContainer, { top: star.top, left: star.left }]}
+                        style={[styles.star, { top: star.top, left: star.left }]}
                         onPress={() => onStarPress(index)}
                         hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
                     >
                         <BlurView
-                            style={styles.starBlur}
-                            blurType="xlight"
-                            blurAmount={10}
-                            overlayColor="rgba(255,255,255,1)"
-                            reducedTransparencyFallbackColor="white"
+                            style={StyleSheet.absoluteFill}
+                            blurType="light"
+                            blurAmount={9.9}
                             pointerEvents="none"
                         />
                     </TouchableOpacity>
                 ))}
             </View>
-
             <View style={styles.nameContainer}>
                 <Text style={styles.nameText}>
                     {currentLevelData.constellation.toUpperCase()}
                 </Text>
             </View>
-
             <TouchableOpacity
                 style={styles.checkButton}
                 disabled={status !== 'passed'}
@@ -198,7 +202,6 @@ export default function GameLevelScreen() {
                     resizeMode="contain"
                 />
             </TouchableOpacity>
-
             {(status === 'error' || (status === 'passed' && showPassedOverlay)) && (
                 <TouchableOpacity
                     style={[
@@ -254,16 +257,13 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         position: 'relative'
     },
-    starContainer: {
+    star: {
         position: 'absolute',
-        width: 20,
-        height: 20,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    starBlur: {
-        ...StyleSheet.absoluteFillObject,
-        borderRadius: 10,
+        width: 12,
+        height: 12,
+        backgroundColor: '#FFFFFF',
+        borderRadius: 6,
+        overflow: 'hidden'
     },
     nameContainer: {
         width: 299,
