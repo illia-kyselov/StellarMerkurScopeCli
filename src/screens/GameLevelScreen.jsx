@@ -11,22 +11,12 @@ export default function GameLevelScreen() {
     const navigation = useNavigation();
     const dispatch = useDispatch();
 
-    // Хуки Redux
-    const {
-        currentLevelIndex,
-        levels,
-        status,
-        frontChain,
-        backChain,
-        multiProgress,
-    } = useSelector(state => state.levels);
-
+    const { currentLevelIndex, levels, status, frontChain, backChain, multiProgress } = useSelector(state => state.levels);
     const currentLevelData = levels[currentLevelIndex];
     const stars = currentLevelData.stars;
     const correctSequence = currentLevelData.correctSequence;
     const isMultiLine = Array.isArray(correctSequence[0]);
     const isGameOver = currentLevelIndex === levels.length - 1 && status === 'passed';
-
     const [showPassedOverlay, setShowPassedOverlay] = useState(false);
 
     useEffect(() => {
@@ -71,15 +61,11 @@ export default function GameLevelScreen() {
         }
     };
 
-    // Вычисление линий, соединяющих звёзды
     const lines = [];
     if (isMultiLine && Array.isArray(currentLevelData.correctSequence[0]) && multiProgress) {
         correctSequence.forEach((line, i) => {
             const { front, back } = multiProgress[i];
-            const visitedIndices = [
-                ...front,
-                ...back.filter(index => !front.includes(index))
-            ].sort((a, b) => a - b);
+            const visitedIndices = [...front, ...back.filter(index => !front.includes(index))].sort((a, b) => a - b);
             for (let j = 1; j < visitedIndices.length; j++) {
                 const start = stars[line[visitedIndices[j - 1]]];
                 const end = stars[line[visitedIndices[j]]];
@@ -175,17 +161,14 @@ export default function GameLevelScreen() {
                         onPress={() => onStarPress(index)}
                         hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
                     >
-                        {/* Рендер звезды */}
-                        <View style={styles.starInner} />
-                        {/* Blur-слой, увеличенный для округлости и белизны */}
                         <BlurView
-    style={styles.starBlurOverlay}
-    blurType="xlight"
-    blurAmount={30}                      // увеличено для более сильного размытия
-    overlayColor="rgba(255,255,255,1)"     // полностью белый цвет
-    reducedTransparencyFallbackColor="white"
-    pointerEvents="none"
-/>
+                            style={styles.starBlur}
+                            blurType="xlight"
+                            blurAmount={10}
+                            overlayColor="rgba(255,255,255,1)"
+                            reducedTransparencyFallbackColor="white"
+                            pointerEvents="none"
+                        />
                     </TouchableOpacity>
                 ))}
             </View>
@@ -278,21 +261,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    starInner: {
-        width: 12,
-        height: 12,
-        backgroundColor: '#FFFFFF',
-        borderRadius: 6,
-        zIndex: 1
-    },
-    starBlurOverlay: {
-        position: 'absolute',
-        top: -4,
-        left: -4,
-        right: -4,
-        bottom: -4,
-        borderRadius: 14,  // Радиус равен половине полной ширины (20+8=28 => 28/2=14)
-        zIndex: 0
+    starBlur: {
+        ...StyleSheet.absoluteFillObject,
+        borderRadius: 10,
     },
     nameContainer: {
         width: 299,
