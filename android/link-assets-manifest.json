@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/TTTravels-Black.ttf",
+      "sha1": "5718df35bfa77861a6e0ceb270062974efae8d1a"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-BlackItalic.ttf",
+      "sha1": "81ae65ea0182e638ca9ebb55afa23f186b3e9081"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-Bold.ttf",
+      "sha1": "0a2a345a2aff046c3fddb752fcaf56bb7a1e7ff0"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-BoldItalic.ttf",
+      "sha1": "8344793a8082031aec796da58515ec78d4a4cd39"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-DemiBold.ttf",
+      "sha1": "22321863b785152718df462f176049c7aed4cf02"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-DemiBoldItalic.ttf",
+      "sha1": "93f332389c54b8f495c2252591b8d464e702a348"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-ExtraBold.ttf",
+      "sha1": "ff9aacde2ce16ad66d9b2b878a56ce24a9e7c65b"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-ExtraBoldItalic.ttf",
+      "sha1": "fcdbf6013bf04ae5e145d4be437f4772b7e230e8"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-ExtraLight.ttf",
+      "sha1": "563e5a49875655cf6694b901fe5d8c1592f082d2"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-ExtraLightItalic.ttf",
+      "sha1": "86573f6b183ab7946a07c70524690a7efc0752b3"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-Italic.ttf",
+      "sha1": "a8d189276353bf3956c259f7992422c5bab223af"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-Light.ttf",
+      "sha1": "768ae29350f407a1dbbe43eda51f071e15992bfd"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-LightItalic.ttf",
+      "sha1": "b9e26f6be8fcb9c8798e56f1a40dfcca5588c4d2"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-Medium.ttf",
+      "sha1": "a8c3b4506b80baa393aed66b2a1e526691d5c706"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-MediumItalic.ttf",
+      "sha1": "800c343e64d004ab24aedb39b2bf52a366654472"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-Regular.ttf",
+      "sha1": "69f98fa4a7711f0f782732c28aa81ad4a02efbbd"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-Thin.ttf",
+      "sha1": "72b317dca8cc9127d3ab4351a48ea4ee987ef0b3"
+    },
+    {
+      "path": "src/assets/fonts/TTTravels-ThinItalic.ttf",
+      "sha1": "92f286d880be4c5b8640dafd3c2395a2cf4da72c"
+    }
+  ]
+}

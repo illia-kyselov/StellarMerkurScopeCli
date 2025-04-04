@@ -7,33 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A13BE5F18F845D39B41C15F /* TTTravels-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C721917268141A58BA72B57 /* TTTravels-BlackItalic.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-StellarMerkurScopeCli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-StellarMerkurScopeCli.a */; };
+		130C05E137004F35826F652E /* TTTravels-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB822406939E4196841E2261 /* TTTravels-Medium.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1CA959E739DF470CAF176568 /* TTTravels-DemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49E82866E1F64F4E9AD5E98B /* TTTravels-DemiBoldItalic.ttf */; };
+		30F3DFE335034605A7D7271D /* TTTravels-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAEBE179DFBD4096B20C814D /* TTTravels-Light.ttf */; };
+		45B8649EAFE84D6A957B0B70 /* TTTravels-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20A61080D0D94E53A367FFAC /* TTTravels-ExtraLightItalic.ttf */; };
+		51BA890D6687439B9A8BD3A8 /* TTTravels-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D7A60C58BEE4E21A1A7888C /* TTTravels-Regular.ttf */; };
+		59F3CA0949FB4FB09445580F /* TTTravels-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71252CE301A743C1ABDD21FC /* TTTravels-ExtraLight.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A3A150A1211C3FEE17ACB74C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		AF9364EE252A47A7B4BA2CA8 /* TTTravels-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF2CBB373449C3A0E6B9AA /* TTTravels-DemiBold.ttf */; };
+		B2095ED1BED645628A9ADEFF /* TTTravels-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CA98E6020C4BA7A4588A5B /* TTTravels-BoldItalic.ttf */; };
+		B6A80B2F9A7A45C788E37151 /* TTTravels-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9C3A93DC52C4B0DB40E5D29 /* TTTravels-Thin.ttf */; };
+		BCCCFAED85AF4186AFDD61B7 /* TTTravels-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BF6B9C6DC78406799D7D9A6 /* TTTravels-Bold.ttf */; };
+		D1B6754CB36A404D9C229230 /* TTTravels-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B9EBA3929491FA3D9E23C /* TTTravels-Black.ttf */; };
+		DD6F39C2AD20460CACA4BF24 /* TTTravels-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D43FA4A5E4C9473F82E8975E /* TTTravels-MediumItalic.ttf */; };
+		E9365AB840C04A4884AF37F7 /* TTTravels-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99875D85437F4ED6BC6B8FED /* TTTravels-ExtraBoldItalic.ttf */; };
+		F0CA92AA302E4335906E75E7 /* TTTravels-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14AF1632F35945BEBE180B17 /* TTTravels-ExtraBold.ttf */; };
+		F1C74373A9024A2797292111 /* TTTravels-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2BF33CC219F43A596C6A5B1 /* TTTravels-LightItalic.ttf */; };
+		FD032FFE701843F5BB541A26 /* TTTravels-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0361B86EFD1A40FE8101BE9C /* TTTravels-ThinItalic.ttf */; };
+		FD9FD953CE104034AB341A88 /* TTTravels-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC56388CD994966B187DEBA /* TTTravels-Italic.ttf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = StellarMerkurScopeCli;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0361B86EFD1A40FE8101BE9C /* TTTravels-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-ThinItalic.ttf"; path = "../src/assets/fonts/TTTravels-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0C721917268141A58BA72B57 /* TTTravels-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-BlackItalic.ttf"; path = "../src/assets/fonts/TTTravels-BlackItalic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* StellarMerkurScopeCli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellarMerkurScopeCli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StellarMerkurScopeCli/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StellarMerkurScopeCli/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = StellarMerkurScopeCli/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		14AF1632F35945BEBE180B17 /* TTTravels-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-ExtraBold.ttf"; path = "../src/assets/fonts/TTTravels-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1DC56388CD994966B187DEBA /* TTTravels-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-Italic.ttf"; path = "../src/assets/fonts/TTTravels-Italic.ttf"; sourceTree = "<group>"; };
+		1F8B9EBA3929491FA3D9E23C /* TTTravels-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-Black.ttf"; path = "../src/assets/fonts/TTTravels-Black.ttf"; sourceTree = "<group>"; };
+		20A61080D0D94E53A367FFAC /* TTTravels-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-ExtraLightItalic.ttf"; path = "../src/assets/fonts/TTTravels-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-StellarMerkurScopeCli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StellarMerkurScopeCli.debug.xcconfig"; path = "Target Support Files/Pods-StellarMerkurScopeCli/Pods-StellarMerkurScopeCli.debug.xcconfig"; sourceTree = "<group>"; };
+		49E82866E1F64F4E9AD5E98B /* TTTravels-DemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-DemiBoldItalic.ttf"; path = "../src/assets/fonts/TTTravels-DemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-StellarMerkurScopeCli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StellarMerkurScopeCli.release.xcconfig"; path = "Target Support Files/Pods-StellarMerkurScopeCli/Pods-StellarMerkurScopeCli.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-StellarMerkurScopeCli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StellarMerkurScopeCli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEF2CBB373449C3A0E6B9AA /* TTTravels-DemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-DemiBold.ttf"; path = "../src/assets/fonts/TTTravels-DemiBold.ttf"; sourceTree = "<group>"; };
+		71252CE301A743C1ABDD21FC /* TTTravels-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-ExtraLight.ttf"; path = "../src/assets/fonts/TTTravels-ExtraLight.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = StellarMerkurScopeCli/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StellarMerkurScopeCli/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D7A60C58BEE4E21A1A7888C /* TTTravels-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-Regular.ttf"; path = "../src/assets/fonts/TTTravels-Regular.ttf"; sourceTree = "<group>"; };
+		92CA98E6020C4BA7A4588A5B /* TTTravels-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-BoldItalic.ttf"; path = "../src/assets/fonts/TTTravels-BoldItalic.ttf"; sourceTree = "<group>"; };
+		99875D85437F4ED6BC6B8FED /* TTTravels-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/TTTravels-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9BF6B9C6DC78406799D7D9A6 /* TTTravels-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-Bold.ttf"; path = "../src/assets/fonts/TTTravels-Bold.ttf"; sourceTree = "<group>"; };
+		BB822406939E4196841E2261 /* TTTravels-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-Medium.ttf"; path = "../src/assets/fonts/TTTravels-Medium.ttf"; sourceTree = "<group>"; };
+		D43FA4A5E4C9473F82E8975E /* TTTravels-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-MediumItalic.ttf"; path = "../src/assets/fonts/TTTravels-MediumItalic.ttf"; sourceTree = "<group>"; };
+		DAEBE179DFBD4096B20C814D /* TTTravels-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-Light.ttf"; path = "../src/assets/fonts/TTTravels-Light.ttf"; sourceTree = "<group>"; };
+		E2BF33CC219F43A596C6A5B1 /* TTTravels-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-LightItalic.ttf"; path = "../src/assets/fonts/TTTravels-LightItalic.ttf"; sourceTree = "<group>"; };
+		E9C3A93DC52C4B0DB40E5D29 /* TTTravels-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "TTTravels-Thin.ttf"; path = "../src/assets/fonts/TTTravels-Thin.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -49,14 +75,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356F01AD99517003FC87E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F11AD99517003FC87E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* StellarMerkurScopeCli */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +111,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				8E61EF8A80364BAF98DEBE84 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -105,6 +124,32 @@
 				13B07F961A680F5B00A75B9A /* StellarMerkurScopeCli.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8E61EF8A80364BAF98DEBE84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B9EBA3929491FA3D9E23C /* TTTravels-Black.ttf */,
+				0C721917268141A58BA72B57 /* TTTravels-BlackItalic.ttf */,
+				9BF6B9C6DC78406799D7D9A6 /* TTTravels-Bold.ttf */,
+				92CA98E6020C4BA7A4588A5B /* TTTravels-BoldItalic.ttf */,
+				6CEF2CBB373449C3A0E6B9AA /* TTTravels-DemiBold.ttf */,
+				49E82866E1F64F4E9AD5E98B /* TTTravels-DemiBoldItalic.ttf */,
+				14AF1632F35945BEBE180B17 /* TTTravels-ExtraBold.ttf */,
+				99875D85437F4ED6BC6B8FED /* TTTravels-ExtraBoldItalic.ttf */,
+				71252CE301A743C1ABDD21FC /* TTTravels-ExtraLight.ttf */,
+				20A61080D0D94E53A367FFAC /* TTTravels-ExtraLightItalic.ttf */,
+				1DC56388CD994966B187DEBA /* TTTravels-Italic.ttf */,
+				DAEBE179DFBD4096B20C814D /* TTTravels-Light.ttf */,
+				E2BF33CC219F43A596C6A5B1 /* TTTravels-LightItalic.ttf */,
+				BB822406939E4196841E2261 /* TTTravels-Medium.ttf */,
+				D43FA4A5E4C9473F82E8975E /* TTTravels-MediumItalic.ttf */,
+				8D7A60C58BEE4E21A1A7888C /* TTTravels-Regular.ttf */,
+				E9C3A93DC52C4B0DB40E5D29 /* TTTravels-Thin.ttf */,
+				0361B86EFD1A40FE8101BE9C /* TTTravels-ThinItalic.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -172,19 +217,31 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A3A150A1211C3FEE17ACB74C /* PrivacyInfo.xcprivacy in Resources */,
+				D1B6754CB36A404D9C229230 /* TTTravels-Black.ttf in Resources */,
+				0A13BE5F18F845D39B41C15F /* TTTravels-BlackItalic.ttf in Resources */,
+				BCCCFAED85AF4186AFDD61B7 /* TTTravels-Bold.ttf in Resources */,
+				B2095ED1BED645628A9ADEFF /* TTTravels-BoldItalic.ttf in Resources */,
+				AF9364EE252A47A7B4BA2CA8 /* TTTravels-DemiBold.ttf in Resources */,
+				1CA959E739DF470CAF176568 /* TTTravels-DemiBoldItalic.ttf in Resources */,
+				F0CA92AA302E4335906E75E7 /* TTTravels-ExtraBold.ttf in Resources */,
+				E9365AB840C04A4884AF37F7 /* TTTravels-ExtraBoldItalic.ttf in Resources */,
+				59F3CA0949FB4FB09445580F /* TTTravels-ExtraLight.ttf in Resources */,
+				45B8649EAFE84D6A957B0B70 /* TTTravels-ExtraLightItalic.ttf in Resources */,
+				FD9FD953CE104034AB341A88 /* TTTravels-Italic.ttf in Resources */,
+				30F3DFE335034605A7D7271D /* TTTravels-Light.ttf in Resources */,
+				F1C74373A9024A2797292111 /* TTTravels-LightItalic.ttf in Resources */,
+				130C05E137004F35826F652E /* TTTravels-Medium.ttf in Resources */,
+				DD6F39C2AD20460CACA4BF24 /* TTTravels-MediumItalic.ttf in Resources */,
+				51BA890D6687439B9A8BD3A8 /* TTTravels-Regular.ttf in Resources */,
+				B6A80B2F9A7A45C788E37151 /* TTTravels-Thin.ttf in Resources */,
+				FD032FFE701843F5BB541A26 /* TTTravels-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,14 +332,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* StellarMerkurScopeCli */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
@@ -408,7 +457,14 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -473,7 +529,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
