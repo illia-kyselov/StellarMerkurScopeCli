@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Svg, { Line } from 'react-native-svg';
-import { BlurView } from 'expo-blur';
+import { BlurView } from '@react-native-community/blur';
 import { useDispatch, useSelector } from 'react-redux';
 import { nextLevel, starSelected, wrongStarSelected, resetLevel, resetAll } from '../store/slices/levelsSlice';
 
